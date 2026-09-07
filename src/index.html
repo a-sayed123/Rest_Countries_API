@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/utils.css" />
+    <title>Document</title>
+  </head>
+  <body data-theme="light">
+    <header class="header">
+      <h1 class="header__title">Where in the world?</h1>
+      <button class="header__btn" type="button">
+        <span class="content">Dark Mode</span>
+      </button>
+    </header>
+
+    <main class="main">
+      <header class="main__header">
+        <div class="input__search">
+          <input
+            type="text"
+            role="search"
+            name="country"
+            id="search__input"
+            placeholder="Search a country..."
+          />
+        </div>
+        <div class="region__select">
+          <button type="button" class="select__btn">Filter by Region</button>
+
+          <section class="custom__select hide" aria-hidden="true" >
+            <ul class="list__items">
+              <li class="list__item active">Africa</li>
+              <li class="list__item">America</li>
+              <li class="list__item">Asia</li>
+              <li class="list__item">Europe</li>
+              <li class="list__item">Oceania</li>
+            </ul>
+          </section>
+        </div>
+      </header>
+
+      <section class="countries">
+        <ul class="list__items">
+            <li class="list__item">
+                <article class="country">
+                    <button type="button" class="country__flag"><img src="./images/Algria.avif" alt="Algeria flag image" class="img-cover"></button>
+                      <div class="content">
+                        <h2 class="country__name">Algeria</h2>
+                        <ul class="country__details">
+                            <li class="list__item"> Population: 40,400,000 </li>
+                            <li class="list__item"> Region: Afriac</li>
+                            <li class="list__item"> Capital: Algeris</li>
+                        </ul>
+                      </div>
+                </article>
+            </li>
+            <li class="list__item">
+                <article class="country">
+                    <button type="button" class="country__flag"><img src="./images/USA.avif" alt="USA flag image" class="img-cover"></button>
+                      <div class="content">
+                        <h2 class="country__name">United States of America</h2>
+                        <ul class="country__details">
+                            <li class="list__item"> Population: 323,947,000 </li>
+                            <li class="list__item"> Region: Afriac</li>
+                            <li class="list__item"> Capital: Algeris</li>
+                        </ul>
+                      </div>
+                </article>
+            </li>
+            <li class="list__item">
+                <article class="country">
+                    <button type="button" class="country__flag"><img src="./images/german.webp" alt="German flag image" class="img-cover"></button>
+                      <div class="content">
+                        <h2 class="country__name">Germany</h2>
+                        <ul class="country__details">
+                            <li class="list__item"> Population: 81,770,900 </li>
+                            <li class="list__item"> Region: Europe</li>
+                            <li class="list__item"> Capital: Berlin</li>
+                        </ul>
+                      </div>
+                </article>
+            </li>
+            <li class="list__item">
+                <article class="country">
+                    <button type="button" class="country__flag"><img src="./images/Afghanistan.webp" alt="Afghanistan flag image" class="img-cover"></button>
+                      <div class="content">
+                        <h2 class="country__name">Afghanistan</h2>
+                        <ul class="country__details">
+                            <li class="list__item"> Population: 27,675,145 </li>
+                            <li class="list__item"> Region: Asia</li>
+                            <li class="list__item"> Capital: Kabul</li>
+                        </ul>
+                      </div>
+                </article>
+            </li>
+            <li class="list__item">
+                <article class="country">
+                    <button type="button" class="country__flag"><img src="./images/Alpania.avif" alt="Alpania flag image" class="img-cover"></button>
+                      <div class="content">
+                        <h2 class="country__name">Alpania</h2>
+                        <ul class="country__details">
+                            <li class="list__item"> Population: 2,886,026 </li>
+                            <li class="list__item"> Region: Europe</li>
+                            <li class="list__item"> Capital: Tirana</li>
+                        </ul>
+                      </div>
+                </article>
+            </li>
+            <li class="list__item">
+                <article class="country">
+                    <button type="button" class="country__flag"><img src="./images/Algria.avif" alt="Algeria flag image" class="img-cover"></button>
+                      <div class="content">
+                        <h2 class="country__name">Algeria</h2>
+                        <ul class="country__details">
+                            <li class="list__item"> Population: 40,400,000 </li>
+                            <li class="list__item"> Region: Afriac</li>
+                            <li class="list__item"> Capital: Algeris</li>
+                        </ul>
+                      </div>
+                </article>
+            </li>
+            <li class="list__item">
+                <article class="country">
+                    <button type="button" class="country__flag"><img src="./images/USA.avif" alt="USA flag image" class="img-cover"></button>
+                      <div class="content">
+                        <h2 class="country__name">United States of America</h2>
+                        <ul class="country__details">
+                            <li class="list__item"> Population: 323,947,000 </li>
+                            <li class="list__item"> Region: Afriac</li>
+                            <li class="list__item"> Capital: Algeris</li>
+                        </ul>
+                      </div>
+                </article>
+            </li>
+            <li class="list__item">
+                <article class="country">
+                    <button type="button" class="country__flag"><img src="./images/german.webp" alt="German flag image" class="img-cover"></button>
+                      <div class="content">
+                        <h2 class="country__name">Germany</h2>
+                        <ul class="country__details">
+                            <li class="list__item"> Population: 81,770,900 </li>
+                            <li class="list__item"> Region: Europe</li>
+                            <li class="list__item"> Capital: Berlin</li>
+                        </ul>
+                      </div>
+                </article>
+            </li>
+            <li class="list__item">
+                <article class="country">
+                    <button type="button" class="country__flag"><img src="./images/Afghanistan.webp" alt="Afghanistan flag image" class="img-cover"></button>
+                      <div class="content">
+                        <h2 class="country__name">Afghanistan</h2>
+                        <ul class="country__details">
+                            <li class="list__item"> Population: 27,675,145 </li>
+                            <li class="list__item"> Region: Asia</li>
+                            <li class="list__item"> Capital: Kabul</li>
+                        </ul>
+                      </div>
+                </article>
+            </li>
+            <li class="list__item">
+                <article class="country">
+                    <button type="button" class="country__flag"><img src="./images/Alpania.avif" alt="Alpania flag image" class="img-cover"></button>
+                      <div class="content">
+                        <h2 class="country__name">Alpania</h2>
+                        <ul class="country__details">
+                            <li class="list__item"> Population: 2,886,026 </li>
+                            <li class="list__item"> Region: Europe</li>
+                            <li class="list__item"> Capital: Tirana</li>
+                        </ul>
+                      </div>
+                </article>
+            </li>
+        </ul>
+      </section>
+    </main>
+    <script type="module" src="./module.js"></script>
+  </body>
+</html>

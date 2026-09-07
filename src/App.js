@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/base.css"
+import "./styles/layout.css"
+import "./styles/utils.css"
+import "./styles/components.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from './Layers/UI/Header.js';
+import Main from './Layers/UI/main.js';
+import { useState } from "react";
+
+export default function App() {
+    const [isDark, setIsDark] = useState(false);
+    function onChangeTheme() {
+        setIsDark(!isDark);
+    }
+    
+    isDark ? document.body.classList.add("dark") : document.body.classList.remove("dark");
+
+    return (
+        <>
+            <Header onChangeTheme={onChangeTheme} isDark={isDark} />
+            <Main isDark={isDark} />
+        </>
+    );
 }
-
-export default App;

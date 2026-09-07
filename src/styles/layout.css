@@ -1,0 +1,165 @@
+/* ---------------- LAYER 1 --------------- */
+
+/* ------------ */
+/* ----Body---- */
+/* ------------ */
+
+body {
+    display: flex;
+    flex-flow: column;
+}
+
+/* ---------------- LAYER 2 --------------- */
+
+/* -------------- */
+/* ----Header---- */
+/* -------------- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem;
+    width: 100%;
+}
+
+/* ------------ */
+/* ----Main---- */
+/* ------------ */
+
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    padding: 1rem;
+    gap: 3rem;
+}
+
+/* ------------ */
+/* ----Page---- */
+/* ------------ */
+
+.page {
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
+    gap: 3rem;
+    padding-block: 2rem;
+    padding: 1.2rem;
+}
+
+.page__content {
+    display: flex;
+    flex-flow: column;
+    gap: 3rem;
+}
+
+/* ---------------- LAYER 3 --------------- */
+
+.main__header {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    gap: 3.5rem;
+}
+
+@media (min-width: 768px) {
+    .main__header {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+}
+
+.countries {
+    width: 100%;
+}
+
+.countries .list__items {
+    display: flex;
+    flex-flow: column;
+    gap: 5rem;
+    margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+    .countries .list__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .countries .list__items {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .countries .list__items {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    .countries .list__items {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 5rem;
+    }
+}
+
+
+.page__details {
+    display: flex;
+    flex-flow: column;
+    gap: 3rem;
+}
+
+.page__info {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+}
+
+.border_countries {
+    display: flex;
+    flex-flow: column;
+    gap: 1.2rem;
+}
+
+.page__details .countries {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    margin-inline-start: 3rem;
+}
+
+@media (min-width: 768px) {
+    .page{
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px){
+    .page{
+        align-items: baseline;
+    }
+    .page__content{
+        flex-flow: row;
+        gap: 3rem;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1440px){
+    .page__content{
+        padding: 1rem;
+        padding-inline: 5rem;
+    }
+    .page__info{
+        flex-flow: row;
+    }
+}
