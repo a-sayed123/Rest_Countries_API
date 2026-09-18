@@ -1,0 +1,95 @@
+:root {
+    --Blue-900: hsl(209, 23%, 22%);
+    --Blue-950: hsl(207, 26%, 17%);
+    --Blue-250: rgb(44 174 234);
+    --Blue-200: rgb(103, 192, 234);
+    --Grey-950: hsl(200, 15%, 8%);
+    --Grey-400: hsl(0, 0%, 50%);
+    --Grey-50: hsl(0, 0%, 99%);
+    --White: hsl(0, 100%, 100%);
+    --gold-crayola: hsl(38, 61%, 73%);
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button,
+input {
+    border: none;
+    background: none;
+    font: inherit;
+}
+
+input {
+    width: 100%;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a,
+img,
+span,
+input,
+button {
+    display: block;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--Grey-950);
+    border-radius: 1.2rem;
+}
+
+body :focus {
+  outline: none;
+}
+
+body :focus-visible {
+  outline: 3px solid var(--Grey-950);
+  outline-offset: 3px;
+}
+
+body.dark :focus-visible{
+    outline-color: var(--Blue-200);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    font-family: cursive;
+    background-color: var(--Grey-50);
+    color: var(--Blue-950);
+}
+
+body.dark{
+    background-color: var(--Grey-950);
+    color: var(--White);
+}
