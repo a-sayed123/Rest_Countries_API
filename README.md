@@ -8,7 +8,7 @@ The project has been rebuilt around a feature-oriented architecture with reusabl
 
 ## Live Demo
 
-[Open the live application](https://restrountriesapi.vercel.app/)
+[Open the live application](https://ahmed-rest-countries.vercel.app/)
 
 ## Features
 
@@ -247,7 +247,7 @@ Further development can build on this baseline without treating the current arch
 
 ## Repository
 
-[GitHub Repository](https://ahmed-rest-countries.vercel.app/)
+[GitHub Repository](https://github.com/a-sayed123/Rest_Countries_API)
 
 ## Acknowledgements
 
