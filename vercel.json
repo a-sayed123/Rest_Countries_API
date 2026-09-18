@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy-Report-Only",
+          "value": "default-src 'none'; base-uri 'none'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' https://flagcdn.com; font-src 'none'; connect-src 'none'; manifest-src 'self'; form-action 'self'; frame-ancestors 'none'; script-src-attr 'none'; style-src-attr 'none'; upgrade-insecure-requests"
+        }
+      ]
+    }
+  ]
+}
